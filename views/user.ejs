@@ -1,0 +1,83 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.101.0">
+  <title>Log in</title>
+
+  <!-- <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sign-in/"> -->
+
+
+
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- Favicons -->
+  <link href="css/styles2.css" rel="stylesheet">
+  <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
+    <a class="navbar-brand" href="#">
+      <img
+        src="data:image/jpeg;base64,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"
+        width="30" height="30" alt="logo">
+      Eziline
+    </a>
+
+     <h4 style="color:white">welcome, <%= username %></h4>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-4" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end rightl" id="navbar-list-4">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="<%= user.url %>" width="40" height="40" class="rounded-circle ">
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+            <a class="dropdown-item" href="/dp">Edit Profile</a>
+            <a class="dropdown-item" href="/">Log Out</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+  </nav>
+<link rel="css/styles3.css" href="stylesheet">
+
+<div class="box">
+  <table class="table table-bordered">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Date</th>
+      <th scope="col">presence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% for (let i=0; i<user.presence.length; i++) { %>
+    <tr>
+      <th scope="row"><%= i %></th>
+      <td><%=  user.presence[i].date  %></td>
+      <td><%=  user.presence[i].present  %></td>
+    </tr>
+    <% } %>
+
+  </tbody>
+</table>
+<form class="item" action="/user" method="post">
+
+
+
+  <button class="btn btn-dark "type="submit" name="list" value="A">Absent</button>
+  <button style="margin-left:5px"class="btn btn-dark "type="submit" name="list" value="P">Present</button>
+  <button class="btn btn-dark ml-auto"type="submit" name="list" value="L">Request Leave</button>
+
+</form>
+</div>
